@@ -1,7 +1,7 @@
 FirstApp::Application.routes.draw do
   #get "home/index"
 
-  #get "pages/home"
+  get "pages/home"
   get "pages/contact"
   get "pages/about"
 
