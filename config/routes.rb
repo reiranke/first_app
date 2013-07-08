@@ -1,6 +1,6 @@
 FirstApp::Application.routes.draw do
  
-
+resources :user
   #get "home/index"
     root :to => 'pages#home'
 match'/contact',:to => 'pages#contact'
