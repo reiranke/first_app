@@ -1,13 +1,100 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+.bg{
+background-image: url("bg.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+.container{
+
+}
+
+header{
+	padding-top: 20px;
+
+}
+header img{
+	padding: 1em;
+	border: 4px solid white;
+	background-color: #000000;
+}
+
+section{
+	margin-top: 3.5em;
+	font-size: 120%;
+	padding: 20px;
+	background-color: white;
+	color: white; 
+	width:950px;
+}
+a{
+	color:red;
+	text-decoration: none;
+	
+	
+}
+a:hover{
+
+}
+a:visited{
+	
+}
+
+nav{
+float: right;
+background-color: white	;
+padding:0 0.7em;
+white-space: nowrap;
+}
+nav ul{
+	margin:0;
+	padding: 0;
+
+
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	font-weight: bold;
+	padding: 1em 0.5em ;
+	
+
+}
+
+nav ul li a{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+nav ul li a:hover{
+	color:blue;
+text-decoration: underline;
+}
+nav ul li a:visited{
+	color:blue;
+	background-color: white;
+}
+a.signup_button{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color:#fff;
+	background: #006400;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+a.signup_button:hover{
+	text-decoration: underline;
+	color:red;
+}
+.round{
+	-moz-border-radius: 10px;
+	-webkit--border-radius: 10px;
+	border-radius: 10px;
+}
+
