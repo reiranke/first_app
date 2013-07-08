@@ -9,4 +9,9 @@ module ApplicationHelper
 			"#{base_title} | #{@title}"
 		end
 	end
+
+	def ban
+		image_tag("rei7.jpg",:class =>"round")
+		
+	end
 end
