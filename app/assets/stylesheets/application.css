@@ -110,3 +110,29 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+table.profile{
+	width: 100%;
+	margin-bottom: 0;
+}
+td.main{
+	width: 70%;
+	padding: 1em; 
+}
+td.sidebar{
+	width: 30%;
+	padding: 1em;
+	vertical-align: top;
+	background: #000000;
+color:white;
+
+}
+
+.profile img.gravatar{
+border:4px solid #000000;
+margin-bottom: -15px;
+
+}
+
+
+

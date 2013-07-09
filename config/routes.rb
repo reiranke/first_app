@@ -7,6 +7,7 @@ match'/contact',:to => 'pages#contact'
 match'/about',:to => 'pages#about' 
 match'/help',:to => 'pages#help' 
 match'/signup',:to => 'user#new' 
+
   #get "user/new"
   # get "pages/home"
   # get "pages/contact"
