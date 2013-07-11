@@ -1,12 +1,13 @@
 FirstApp::Application.routes.draw do
- 
-resources :user
+
+resources :users
   #get "home/index"
     root :to => 'pages#home'
 match'/contact',:to => 'pages#contact'
 match'/about',:to => 'pages#about' 
 match'/help',:to => 'pages#help' 
-match'/signup',:to => 'user#new' 
+match'/signup',:to => 'users#new' 
+
 
   #get "user/new"
   # get "pages/home"
