@@ -1,8 +1,6 @@
 module ApplicationHelper
-
-
 	def title
-	base_title ="RUBY SAMPLE APPLICATION"
+		   base_title ="RUBY SAMPLE APPLICATION"
 		if @title.nil?
 			base_title
 		else
@@ -12,6 +10,5 @@ module ApplicationHelper
 
 	def ban
 		image_tag("rei7.jpg",:class =>"round")
-		
 	end
 end

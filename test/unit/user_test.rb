@@ -8,6 +8,7 @@
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #  encryted_password :string(255)
+#  salt              :string(255)
 #
 
 require 'test_helper'

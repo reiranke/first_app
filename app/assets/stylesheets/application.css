@@ -23,9 +23,11 @@ section{
 	margin-top: 3.5em;
 	font-size: 120%;
 	padding: 20px;
-	background-color: white;
-	color: black; 
+	background-color: black;
+	color: white; 
 	width:950px;
+	border: 4px solid white;
+
 }
 a{
 	color:red;
@@ -46,6 +48,7 @@ background-color: black	;
 padding:0 0.7em;
 white-space: nowrap;
 margin-right: 11.5em;
+border: 4px solid white;
 }
  nav ul{
 	margin:0;
@@ -89,6 +92,7 @@ a.signup_button{
 	font-size: 150%;
 	font-weight: bold;
 	padding: 20px;
+	border: 4px solid white;
 }
 a.signup_button:hover{
 	text-decoration: underline;
@@ -144,7 +148,7 @@ div.field {
 
 .action{
 	
-	border: 4px solid black;
+	border: 4px solid white;
 	width: 500px;
 	background: #000000;
 	margin-left: 250px;
@@ -158,12 +162,12 @@ div.field {
 
 }
 
-/*.field_with_error{
+.field_with_error{
 	margin-top: 10px;
 	padding: 2px;
 	background-color: red;
 	display: table;
-}*/
+}
 #error_explanation{
 	width: 400px;
 	font-size: 15px;
@@ -204,10 +208,32 @@ padding: 5px;
 .flash {
 	width: 500px;
 	border: 2px solid black;
-	border-radius: 10px;
+	border-radius: 2px;
 	background-color:green;
 	color: blue;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.p{
+color: blue;
+text-indent: 1em;
+}
+.p a:hover{
+text-decoration: underline;	
+}
+
+
+.error {
+	background: black;
+	text-align: left;
+	padding: 5px 5px 5px 15px;
+	font-size: 20px;
+	margin:-7px;
+	color :red; 
+	margin-left: 250px;
+	width: 484px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 100px  blue;
 }
