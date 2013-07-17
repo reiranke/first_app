@@ -10,7 +10,7 @@ gem "pg", :group => :production
 #gem 'sqlite3',
 group :development, :test do
   gem 'sqlite3'
- gem 'faker'
+gem 'faker', '0.3.1', :require => false
 end
 
 # Gems used only for assets and not required
