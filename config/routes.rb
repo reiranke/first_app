@@ -2,8 +2,16 @@ FirstApp::Application.routes.draw do
 
   #get "sessions/new"
 
-resources :users
-resources :sessions, :only => [:new, :create, :destroy]
+# resources :users
+resources :users do   
+member do
+  get :following,:followers
+  end
+end
+
+resources :sessions,   :only => [:new, :create, :destroy]
+resources :microposts, :only => [:create, :destroy]
+resources :relationshps, :only => [:create, :destroy]
   #get "home/index"
 root :to => 'pages#home'
 match'/contact',:to => 'pages#contact'

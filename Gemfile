@@ -3,13 +3,14 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem "annotate", "~> 2.5.0"
 gem 'gravatar_image_tag','0.1.0'
+gem 'will_paginate'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "pg", :group => :production
 #gem 'sqlite3',
 group :development, :test do
   gem 'sqlite3'
-
+ gem 'faker'
 end
 
 # Gems used only for assets and not required

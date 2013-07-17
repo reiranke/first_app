@@ -9,11 +9,24 @@
 #  updated_at        :datetime         not null
 #  encryted_password :string(255)
 #  salt              :string(255)
+#  admin             :boolean          default(FALSE)
 #
 
 class User < ActiveRecord::Base
 	  attr_accessor :password	
 	  attr_accessible :email, :name, :password, :password_confirmation
+	  #assocai...
+	  has_many :microposts,            :dependent    =>:destroy
+	  has_many :relationshps,           :dependent    =>:destroy,
+	   						           :foreign_key  =>"follower_id"
+	  has_many :reverse_relationshps,   :dependent    =>:destroy,
+	  						           :foreign_key  =>"followed_id",
+	  						           :class_name   =>"Relationshp"
+	  has_many :following,             :through      =>:relationshps,
+	  								   :source       =>:followed
+	  has_many :followers,             :through      =>:reverse_relationshps,
+	  								   :source       =>:follower
+	 
 	  email_re=/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	  validates :name,     :presence 		=> true,
 	  				       :length   		=> {:maximum => 50}
@@ -30,6 +43,22 @@ class User < ActiveRecord::Base
 	def has_password?(submitted_password)
 		encryted_password==encrypt(submitted_password)
 	end
+
+	def feed
+		#feed show
+		#Micropost.where("user_id = ?",id)
+				Micropost.from_users_followed_by(self)
+	end
+	def following?(followed)
+		relationshps.find_by_followed_id(followed)
+	end
+	def follow!(followed)
+		relationshps.create!(:followed_id =>followed.id)
+	end
+	def unfollow!(followed)
+		relationshps.find_by_followed_id(followed).destroy	
+	end	
+
 
 			class << self
 				def authenticate(email,submitted_password)

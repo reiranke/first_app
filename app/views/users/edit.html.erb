@@ -1,0 +1,16 @@
+<div class="edit">
+		<h1 class ="h">EDIT<h1>
+			<%= form_for(@user) do |f| %>
+			<%= render 'shared/error_messages',:object=>f.object%><br>
+
+			<div class="profilepic">
+<%= gravatar_for @user %><br><br>
+<a href="http://gravatar.com/emails">Change</a>
+</div>
+			<%= render 'fields',:f =>f%>
+			<%= f.submit "Update!" %><br>
+		</div> 
+
+
+</div> 
+			<% end %>

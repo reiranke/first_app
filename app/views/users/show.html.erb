@@ -3,12 +3,26 @@
 		<td class="main">
 		<h1>
 			<%= gravatar_for @user %>
-			<%= @user.name %>
+			<%= @user.name.capitalize %>
+			<%= render 'follow_form' if signed_in?%>
 		</h1>
+		
+		<%if @user.microposts.any?%>
+		<table class="microposts" summary="User Microposts">
+		<%= render @microposts%>
+		</table>
+		<div class="digg_pagination">
+ <%= will_paginate @microposts%>
+</div>
+		
+		<%end%>
 		</td>
 		<td class="sidebar round">
 			<strong>Name:</strong>  <%= @user.name%><br/>
-			<strong>URL:</strong>   <%= link_to user_path(@user),@user%>
+			<strong>URL:</strong>   <%= link_to user_path(@user),@user%><br>
+			<strong>Micropost:</strong>   <%= @user.microposts.count%>
+			<%= render 'shared/stats'%>
 		</td>
 	</tr>
+
 </table>

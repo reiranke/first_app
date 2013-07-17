@@ -133,7 +133,7 @@ color:white;
 }
 
 .profile img.gravatar{
-border:4px solid #000000;
+border:4px solid white;
 margin-bottom: -15px;
 
 }
@@ -142,6 +142,7 @@ div.field {
 	font-size: 17px;
 	margin-left: 20px;
 	color: white;
+	margin-left: 25px;
 
 
 }
@@ -237,3 +238,177 @@ text-decoration: underline;
 	margin-bottom: 20px;
 	box-shadow: 0px 0px 100px  blue;
 }
+
+
+
+.edit{
+	
+	border: 4px solid white;
+	width: 500px;
+	background: #000000;
+	margin-left: 250px;
+	box-shadow: 10px 10px 5px blue;
+
+}
+
+
+
+.profilepic img.gravatar{
+border:4px solid white;
+margin-bottom: -15px;
+
+
+
+
+}
+
+.profilepic{
+	position: absolute;
+margin-left: 320px;
+font-size: 20px;
+}
+
+
+
+.profilepic a{
+	color: white;
+	
+}
+
+.profilepic a:hover{
+	color: blue;
+	text-decoration: underline;
+	
+}
+
+
+.notice {background: black;
+	text-align: left;
+	padding: 5px 5px 5px 15px;
+	font-size: 20px;
+	margin:-7px;
+	color :red; 
+	margin-left: 250px;
+	width: 484px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 100px  blue;}
+}
+ul.users   {
+	margin-top:  2em;
+	
+}
+ul.users li{
+	list-style: none;
+}
+.users a{
+	color:green;
+}
+.users a:hover{
+	text-decoration: underline;
+}
+
+
+/*PAGINATE*/
+.digg_pagination {
+  background: black;
+  cursor: default;
+  border: 3px solid white;
+   padding: 5px 5px 5px 5px;
+
+  }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+ 
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: red;
+    color: white;
+    border: 1px solid blue; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: white;
+      border-color: white; 
+      background-color: blue;
+  }
+ 
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+ /*microposts*/
+
+ h1.micropost_h1{
+
+ 	color :blue;
+ }
+ table.microposts{
+ 	margin-top: 1em;
+ }
+table.microposts tr{
+	height: 70px;
+}
+table.microposts tr td.gravatar{
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	width: 50px;
+}
+
+table.microposts tr td.micropost{
+	border-top: solid #ccc;
+	/*#vertical-align: top;*/
+	padding-top: 10px;
+}
+table.microposts tr td.micropost span.timestamp{
+	display: block;
+	font-size: 85%;
+	color:#666;
+}
+
+
+
+div.user_info img {
+	padding-right: 0.1em;
+}
+div.user_info a{
+	text-decoration: none;
+}
+div.user_info span.user_name{
+	position: absolute;
+
+}
+div.user_info span.micropost{
+	font-size: 100%;
+margin-right: 10em;
+
+}
+
+div.side {
+		margin-left: 10em;
+
+}
+
+div.user_info a:hover{
+text-decoration: underline;
+}
+
+.post textarea{
+height: 3em;
+margin-bottom: 0;
+
+}
+
+
+
+
+
+
